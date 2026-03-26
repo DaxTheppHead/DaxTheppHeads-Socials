@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DaxTheppHead | Social Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(270deg, #3b82f6, #6366f1, #8b5cf6, #a855f7);
+      background-size: 800% 800%;
+      animation: gradientMove 12s ease infinite;
+      color: white;
+      text-align: center;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 15px rgba(168,85,247,0.8);
+      transition: 0.3s;
+    }
+
+    header img:hover {
+      box-shadow: 0 0 30px rgba(99,102,241,1);
+      transform: scale(1.05);
+    }
+
+    h1 { margin: 10px 0 5px; }
+    .username { opacity: 0.7; margin-bottom: 10px; }
+
+    .live-badge {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 12px;
+      background: red;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      box-shadow: 0 0 10px red;
+      animation: pulseLive 1.5s infinite;
+    }
+
+    @keyframes pulseLive {
+      0% { box-shadow: 0 0 5px red; }
+      50% { box-shadow: 0 0 20px red; }
+      100% { box-shadow: 0 0 5px red; }
+    }
+
+    p { max-width: 600px; margin: 0 auto; opacity: 0.9; }
+
+    .links { margin: 30px auto; max-width: 400px; }
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(0,0,0,0.4);
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.2s;
+      box-shadow: 0 0 8px rgba(99,102,241,0.4);
+    }
+
+    .link img { width: 22px; height: 22px; }
+
+    .link:hover {
+      background: rgba(0,0,0,0.6);
+      transform: scale(1.05);
+      box-shadow: 0 0 18px rgba(168,85,247,0.9);
+      animation: pulse 0.6s ease;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1.05); }
+    }
+
+    .gallery img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(99,102,241,0.6);
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(168,85,247,1);
+    }
+
+    .discord {
+      margin: 40px;
+      padding: 20px;
+      background: rgba(0,0,0,0.4);
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 0 15px rgba(168,85,247,0.6);
+    }
+
+    .discord a {
+      color: #c7d2fe;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .discord a:hover { text-decoration: underline; }
+
+    .particles {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: white;
+      opacity: 0.5;
+      border-radius: 50%;
+      animation: float 10s linear infinite;
+    }
+
+    @keyframes float {
+      from { transform: translateY(100vh); }
+      to { transform: translateY(-10vh); }
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<div class="particles">
+  <div class="particle" style="left:10%; animation-delay:0s;"></div>
+  <div class="particle" style="left:30%; animation-delay:2s;"></div>
+  <div class="particle" style="left:50%; animation-delay:4s;"></div>
+  <div class="particle" style="left:70%; animation-delay:1s;"></div>
+  <div class="particle" style="left:90%; animation-delay:3s;"></div>
+</div>
+
+<header>
+  <img src="https://via.placeholder.com/120.png?text=PP" alt="DaxTheppHead Logo">
+  <h1>@DaxTheppHead</h1>
+  <div class="username">Dax Underdown</div>
+  <p>An aspiring streamer just having fun.</p>
+  <div class="live-badge">LIVE 🔴</div>
+</header>
+
+<section class="links">
+  <iframe src="https://player.twitch.tv/?channel=daxthepphead&parent=yourusername.github.io" height="200" width="100%"></iframe>
+
+  <a class="link" href="https://www.youtube.com/channel/UCguCKc9FG8FIaM9tM1-VRSg" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg">
+    YouTube
+  </a>
+
+  <a class="link" href="https://www.twitch.tv/daxthepphead" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitch.svg">
+    Twitch
+  </a>
+
+  <a class="link" href="https://www.instagram.com/daxtheppheadreal/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
+    Instagram
+  </a>
+
+  <a class="link" href="https://www.tiktok.com/@daxthepphead77" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg">
+    TikTok
+  </a>
+</section>
+
+<section class="gallery">
+  <h2>Dax Underdown</h2>
+  <img src="https://via.placeholder.com/220.png?text=Photo">
+</section>
+
+<section class="discord">
+  <h2>Join My Discord</h2>
+  <p>Click below to join instantly 👇</p>
+  <h3><a href="https://discord.gg/9kGwRFgqYs" target="_blank">Join Server</a></h3>
+</section>
+
+<footer>
+  <p>© 2026 Dax Underdown</p>
+</footer>
+
+<script>
+// hover sound
+const hoverSound = new Audio("https://www.soundjay.com/buttons/sounds/button-16.mp3");
+document.querySelectorAll('.link').forEach(link => {
+  link.addEventListener('mouseenter', () => {
+    hoverSound.currentTime = 0;
+    hoverSound.play();
+  });
+});
+
+// fake LIVE toggle
+const liveBadge = document.querySelector('.live-badge');
+const isLive = new Date().getMinutes() % 2 === 0;
+if (!isLive) liveBadge.style.display = 'none';
+
+// mouse particles
+const particlesContainer = document.querySelector('.particles');
+document.addEventListener('mousemove', (e) => {
+  const p = document.createElement('div');
+  p.className = 'particle';
+  p.style.left = e.clientX + 'px';
+  p.style.top = e.clientY + 'px';
+  p.style.position = 'fixed';
+  p.style.animation = 'none';
+  p.style.opacity = '0.8';
+  particlesContainer.appendChild(p);
+
+  setTimeout(() => {
+    p.style.transition = '1s';
+    p.style.transform = 'translateY(-50px)';
+    p.style.opacity = '0';
+  }, 10);
+
+  setTimeout(() => p.remove(), 1000);
+});
+</script>
+
+</body>
+</html>
